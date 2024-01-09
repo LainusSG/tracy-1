@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CargarScriptsService } from './cargar-scripts.service';
 import { ApiService } from './service/api.service';
-
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',

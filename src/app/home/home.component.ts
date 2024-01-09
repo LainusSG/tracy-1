@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../service/api.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,8 @@ export class HomeComponent  implements OnInit{
   ngOnInit(): void {
     this.llenarData();
   }
+
+
 
   llenarData(){
     this.apiService.getData().subscribe(datarray =>{
